@@ -1,0 +1,11 @@
+{
+  "name": "Instagram Like Bot",
+  "description": "Just likes things on Instagram.",
+  "repository": "https://github.com/lambtron/instagram-like-bot",
+  "website": "https://andyjiang.com",
+  "keywords": ["instagram", "like", "bot"],
+  "formation": [
+    { "process": "web", "quantity": 0, "size": "free"},
+    { "process": "clock", "quantity": 1, "size": "free"}
+  ]
+}
