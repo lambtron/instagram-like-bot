@@ -1,0 +1,24 @@
+{
+  "name": "instagram-like-bot",
+  "version": "0.0.1",
+  "description": "Just likes things on Instagram.",
+  "main": "./server/cron.js",
+  "scripts": {
+    "start": "node --harmony ./server/cron.js"
+  },
+  "engines": {
+    "node": "0.12.x",
+    "npm": "2.1.x"
+  },
+  "author": "Andy Jiang",
+  "license": "MIT",
+  "dependencies": {
+    "co": "^4.6.0",
+    "cron": "^1.0.9",
+    "instagram-node": "^0.5.8",
+    "lodash": "^3.10.1",
+    "node-fmt": "^1.0.3",
+    "superagent": "^1.4.0",
+    "thunkify-wrap": "^1.0.4"
+  }
+}
