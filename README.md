@@ -1,10 +1,34 @@
 # Instagram Like Bot
 
 > Just likes things on Instagram.
+> Runs every 10 minutes
 
 ## Installation
 
+```
+npm i
+```
+
+## Prerequisites
+
+- Create an application under [Instagram Developer](https://www.instagram.com/developer/).
+- Edit server/config.js to have your configurations for this bot.
+
+###How to get access_token
+
+- Setup on Instagram Developer a redirect_url.
+- Get Access token by entering to the browser:
+
+```
+https://www.instagram.com/oauth/authorize/?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URL&response_type=token&scope=public_content+likes
+
+```
+
 ## Usage
+
+```
+npm start
+```
 
 ## License (MIT)
 
@@ -26,5 +50,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-

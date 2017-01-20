@@ -6,6 +6,7 @@
 var CronJob = require('cron').CronJob;
 var get = require('./index');
 var co = require('co');
+var config = require('./config');
 
 /**
  * Initiate Cronjob.
@@ -14,8 +15,9 @@ var co = require('co');
 new CronJob({
   cronTime: "*/10 * * * *", // every ten minutes
   onTick: function () {
+    console.log('~~~10 minutes past')
     co(get());
   },
   start: true,
-  timeZone: "America/Los_Angeles"
+  timeZone: config.timezone
 });
